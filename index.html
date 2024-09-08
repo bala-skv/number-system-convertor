@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Number System Interchange</h1>
+    
+    <div class="converter">
+        <label for="inputNumber">Enter Number:</label>
+        <input type="text" id="inputNumber" placeholder="Enter a number">
+        
+        <label for="fromSystem">From:</label>
+        <select id="fromSystem">
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="octal">Octal</option>
+        </select>
+
+        <label for="toSystem">To:</label>
+        <select id="toSystem">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="octal">Octal</option>
+        </select>
+
+        <button onclick="convert()">Change</button>
+    </div>
+
+    <h2>Output:</h2>
+    <p id="result">--</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
